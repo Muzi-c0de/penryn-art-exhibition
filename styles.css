@@ -106,3 +106,35 @@ dialog .x{position:absolute;right:13px;top:10px;background:transparent;color:#dc
   .school-brand img{width:190px;height:52px}
   .footer-brand img{width:200px;height:60px}
 }
+/* Resize official Penryn logo */
+.school-brand {
+    display: flex;
+    align-items: center;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.school-brand img {
+    width: 210px !important;
+    height: 55px !important;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.header {
+    height: 78px;
+    overflow: hidden;
+}
+
+.footer-brand img {
+    width: 190px !important;
+    height: 55px !important;
+}
+
+@media (max-width: 520px) {
+    .school-brand img {
+        width: 165px !important;
+        height: 48px !important;
+    }
+}
